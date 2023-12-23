@@ -53,3 +53,5 @@ return Buffer.from(input, 'base64').toString('utf8')
 }
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+
+module.exports = app;
