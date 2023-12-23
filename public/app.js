@@ -1,6 +1,6 @@
 
-var koyal = new Audio('assets/koyal.mp3');
-var moye = new Audio('assets/Moye.mp3');
+var koyal = document.getElementById("koyalSound")
+var moye = document.getElementById("moyeSound")
 var MoyeDiv =  document.getElementById("MoyeSec")
 
 
