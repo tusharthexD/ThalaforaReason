@@ -1,0 +1,184 @@
+body{
+text-align: center;
+font-family: "Work Sans";
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+#MoyeSec{
+    position: absolute;
+    margin-top: 50px;
+    background-color: white ;
+    height: 600px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    top: 0;
+    width: clamp(250px, 100%, 500px);
+    border-radius: 20px;
+    height: clamp(300px, 120vw, 600px);
+    border: 2px solid black;
+    overflow: hidden;
+}
+#MainDiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: clamp(250px, 40%, 400px);
+}
+form>input{
+    outline: none;
+    border: none;
+    padding: 15px 15px;
+    background-color: transparent;
+    border-bottom: 2px solid rgba(177, 177, 177, 0.532);
+
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+    background-color: white;
+    
+    margin-top: auto;
+}
+footer>a>span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#Moye{
+width: 100%;
+margin-top: -8px;
+z-index: -1;
+opacity: .4;
+
+}
+#MoyeSec>h3{
+    position: absolute;
+    top: 20%;
+    z-index: 10;
+    color: rgb(0, 0, 0);
+}
+#MoyeSec>button{
+    position: absolute;
+    background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%);
+    border-radius: 4px;
+    transition: 0.5s;
+    z-index: 10;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding: 15px 20px;
+    font-size: 16px;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+}
+         
+         
+.btn-grad {
+    background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+    margin: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+#MoyeSec>button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+ 
+.koyal{
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    left: 50%;
+    transform: translate(-50%, 0%);
+   width: clamp(400px, 100%, 700px);
+}
+
+.msd{
+    width: 250px;
+    border-radius: 10px;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+}
+.thala{
+    background-color: yellow;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+}
+.copySec{
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    align-items: center;
+   
+    flex-direction: column;
+}
+.copySec>div{
+    display: flex;
+}
+
+.copySec>input{
+padding: 10px 15px;
+}
+
+
+         
+.btn-grad {
+   
+    margin: 10px;
+    
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 

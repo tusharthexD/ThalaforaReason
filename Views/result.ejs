@@ -1,0 +1,17 @@
+<%- include('header.ejs') %>
+
+    <img class="koyal" src="assets/koyal.gif" alt="">
+    <h1>United Community of <span class="thala">THALA</span></h1>
+    <h4> where every heart beats for MSD🏏</h4>
+    <img class="msd" src="assets/msd.png" alt="">
+
+    <h3><span>
+            <%= content %>
+        </span> is a Thala for a Reason</h3>
+    <div class="copySec" >
+        <input id="link" value="<%= link %>">
+        <div><button class="btn-grad" onclick="copyLink('<%= content%>')">Share</button>
+        <a href="/"><button class="btn-grad">PlayAgain!</button>
+        </a></div>
+    </div>
+    <%- include('footer.ejs') %>

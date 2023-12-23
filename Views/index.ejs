@@ -1,0 +1,27 @@
+<%- include('header.ejs') %>
+<script>onload=()=>{
+   koyal.pause()
+}
+</script>
+   <div id="MainDiv">
+      <h1>Check are you <span class="thala">THALA</span> or NOT</h1>
+      <p>Write a Word or number below and Submit to check. </p>
+      <form action="/" method="post">
+         <input type="text" maxlength="12" name="firstInput" required="true" placeholder="Write Anything...">
+         <input type="text" value="<%= locals.name %>" name="secondInput" placeholder="Your Name" required="true">
+         <button id="checkBtn" class="btn-grad" name="submit">Submit</button>
+
+      </form>
+      <% if (locals.result) { %>
+         <div id="MoyeSec">
+            <h3>
+               <%= locals.result %>
+            </h3>
+            <button onclick="RemoveMoye()" class="tryAgain">Try again!</button>
+            <img id="Moye" src="assets/Moye.gif" alt="">
+         </div>
+         <% } %>
+
+   </div>
+
+   <%- include('footer.ejs') %>
