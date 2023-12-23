@@ -3,12 +3,14 @@ import bodyParser from "body-parser"
 
 const app = express();
 const port = 3000;
+app.set('views', './Views');
+app.set('view engine', 'ejs');
 app.use(express.static("public/"))
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
 app.get("/", (req, res) => {
-  res.render("index.ejs");
+  res.render("index");
 });
 
 app.post("/", (req, res) => {
@@ -33,7 +35,7 @@ app.post("/", (req, res) => {
 
     } else {
       thala = `${val} : No Thala spotted, opinion rejected. Try another word`;
-      res.render("index.ejs", { result: thala, name:name});
+      res.render("index", { result: thala, name:name});
     }
   }
   
@@ -41,7 +43,7 @@ app.post("/", (req, res) => {
 
 app.get('/:id',(req,res)=>{
     let thala = decode(req.params.id)
-  res.render("result.ejs", { content: thala, link : req.params.id  });
+  res.render("result", { content: thala, link : req.params.id  });
     
 })
 
