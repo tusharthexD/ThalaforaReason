@@ -24,7 +24,7 @@ function copyLink(element){
 link.select();
 link.setSelectionRange(0, 99999);
 document.execCommand('copy')
-const whatsappUrl = `whatsapp://send?text=${encodeURIComponent(element+ " is Thala for a reason. Are you, Check this out:")}%20${encodeURIComponent("https://thalaforareason-70lv.onrender.com/"+link.value)}`;
+const whatsappUrl = `whatsapp://send?text=${encodeURIComponent(element+ " is Thala for a reason. Are you, Check this out:")}%20${encodeURIComponent(link.value)}`;
 // Open WhatsApp with the share URL
  window.location.href = whatsappUrl;
 }
